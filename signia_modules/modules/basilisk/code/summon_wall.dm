@@ -20,7 +20,7 @@
 /// An invisible effect which chases a target, spawning tentacles every so often.
 /obj/effect/temp_visual/effect_trail/summon_wall
 	name = "wall summoning"
-	duration = 5 SECONDS
+	duration = 3 SECONDS
 	move_speed = 2
 	homing = TRUE
 	spawn_interval = 0.1 SECONDS

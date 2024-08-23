@@ -36,12 +36,16 @@
 	death_message = "collapses into a pile of bones, its flesh sloughing away."
 	death_sound = 'sound/magic/demon_dies.ogg'
 	footstep_type = FOOTSTEP_MOB_HEAVY
+	var/basilisk_pass = TRUE
 	var/datum/action/cooldown/mob_cooldown/summon_wall/summon_wall
+	var/datum/action/cooldown/mob_cooldown/projectile_attack/hook/hook
 
 /mob/living/simple_animal/hostile/megafauna/basilisk/Initialize(mapload)
 	.=..()
 	summon_wall = new /datum/action/cooldown/mob_cooldown/summon_wall
+	hook = new /datum/action/cooldown/mob_cooldown/projectile_attack/hook
 	summon_wall.Grant(src)
+	hook.Grant(src)
 
 	AddElement(/datum/element/change_force_on_death, move_force = MOVE_FORCE_DEFAULT)
 
@@ -53,5 +57,8 @@
 	if(client)
 		return
 	summon_wall.Trigger(target = target)
+	hook.Trigger(target = target)
+
+
 
 
