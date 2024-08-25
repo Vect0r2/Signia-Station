@@ -17,7 +17,7 @@
 	desc = "This device lets you build custom shuttles. The future of exploration."
 	id = "rapid_shuttle_contructor"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 20, /datum/material/glass = SHEET_MATERIAL_AMOUNT * 10 | /datum/material/bluespace = SHEET_MATERIAL_AMOUNT * 0.5)
+	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 20, /datum/material/glass = SHEET_MATERIAL_AMOUNT * 10 | /datum/material/bluespace = HALF_SHEET_MATERIAL_AMOUNT)
 	build_path = /obj/item/shuttle_creator
 	category = list(
 		RND_CATEGORY_TOOLS
