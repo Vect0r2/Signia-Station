@@ -18,11 +18,13 @@ GLOBAL_LIST_EMPTY(string_lists)
 	if(!islist(values))
 		return values //baseturf things
 	// return values
+	/* //START OF SIGNIA EDIT
 	if(length(values) > 10)
 		stack_trace("The baseturfs list of [baseturf_holder] at [baseturf_holder.x], [baseturf_holder.y], [baseturf_holder.x] is [length(values)], it should never be this long, investigate. I've set baseturfs to a flashing wall as a visual queue")
 		baseturf_holder.ChangeTurf(/turf/closed/indestructible/baseturfs_ded, list(/turf/closed/indestructible/baseturfs_ded), flags = CHANGETURF_FORCEOP)
 		return string_list(list(/turf/closed/indestructible/baseturfs_ded)) //I want this reported god damn it
 	return string_list(values)
+	*/ //END OF SIGNIA EDIT
 
 /turf/closed/indestructible/baseturfs_ded
 	name = "Report this"
