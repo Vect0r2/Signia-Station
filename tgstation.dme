@@ -6395,6 +6395,7 @@
 #include "interface\fonts\vcr_osd_mono.dm"
 #include "signia_modules\master_files\code\modules\research\techweb\nodes\security_nodes.dm"
 #include "signia_modules\modules\basilisk\code\basilisk.dm"
+#include "signia_modules\modules\basilisk\code\crush.dm"
 #include "signia_modules\modules\basilisk\code\hook.dm"
 #include "signia_modules\modules\basilisk\code\summon_wall.dm"
 #include "signia_modules\modules\basilisk\code\walls.dm"
