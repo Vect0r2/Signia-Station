@@ -5,18 +5,19 @@ import { Window } from '../layouts';
 export const biotube = (props, context) => {
   const { act, data } = useBackend(context);
   // Extract `health` and `color` variables from the `data` object.
-  const { health, color } = data;
+  const { instability } = data;
   return (
     <Window resizable>
       <Window.Content scrollable>
-        <Section title="Health status">
+        <Section title="Instability Status">
           <LabeledList>
-            <LabeledList.Item label="Health">{health}</LabeledList.Item>
-            <LabeledList.Item label="Color">{color}</LabeledList.Item>
-            <LabeledList.Item label="Button">
+            <LabeledList.Item label="Instability">
+              {instability}
+            </LabeledList.Item>
+            <LabeledList.Item label="Reroll instability">
               <Button
-                content="Dispatch a 'test' action"
-                onClick={() => act('test')}
+                content="Prod with microlasers"
+                onClick={() => act('prod')}
               />
             </LabeledList.Item>
           </LabeledList>
