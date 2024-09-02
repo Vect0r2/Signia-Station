@@ -7,7 +7,7 @@
 /obj/machinery/biotube/ui_interact(mob/user, datum/tgui/ui)
   ui = SStgui.try_update_ui(user, src, ui)
   if(!ui)
-    ui = new(user, src, "MyMachine")
+    ui = new(user, src, "biotube")
     ui.open()
 
 
