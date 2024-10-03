@@ -103,3 +103,9 @@
 	cost = 5
 	item = /obj/item/grenade/spawnergrenade/cat
 	surplus = 30
+
+/datum/uplink_item/dangerous/zombie
+	name = "Romerol Powder"
+	desc = "A powder with the ability to turn people who get injected with into zombies on death"
+	cost = 25
+	item = /obj/item/storage/box/syndie_kit/romerol

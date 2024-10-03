@@ -5,7 +5,7 @@
 
 /datum/supply_pack/security/ammo
 	name = "Ammo Crate"
-	desc = "Contains three boxes of beanbag shotgun shells, three boxes \
+	desc = "Contains three boxes of buckshot ammo, three boxes of  beanbag shotgun shells, three boxes \
 		of rubbershot shotgun shells and one of each special .38 speedloaders."
 	cost = CARGO_CRATE_VALUE * 8
 	access_view = ACCESS_ARMORY
@@ -14,6 +14,9 @@
 					/obj/item/ammo_box/c38/trac,
 					/obj/item/ammo_box/c38/hotshot,
 					/obj/item/ammo_box/c38/iceblox,
+					/obj/item/storage/box/lethalshot,
+					/obj/item/storage/box/lethalshot,
+					/obj/item/storage/box/lethalshot,
 				)
 	crate_name = "ammo crate"
 
@@ -347,3 +350,29 @@
 	access_view = ACCESS_SECURITY
 	contains = list(/obj/item/clothing/glasses/sunglasses = 1)
 	crate_name = "sunglasses crate"
+
+
+/datum/supply_pack/armory/wt550
+	name = "WT-550 Autorifle Crate"
+	desc = "Contains two high-powered, semiautomatic rifles chambered in 4.6x30mm. Requires Armory access to open."
+	hidden = TRUE
+	cost = CARGO_CRATE_VALUE * 7
+	contains = list(
+		/obj/item/gun/ballistic/automatic/wt550 = 2,
+		/obj/item/ammo_box/magazine/wt550m9 = 2,
+	)
+	name = "WT-550 Auto Rifle Crate"
+	crate_type = /obj/structure/closet/crate/secure/gorlex_weapons/jammed
+
+/datum/supply_pack/armory/wt550ammo
+	name = "Smuggled WT-550 Ammo Crate"
+	desc = "Contains six 20-round magazine for the WT-550 Auto Rifle. Each magazine is designed to facilitate rapid tactical reloads."
+	hidden = TRUE
+	cost = CARGO_CRATE_VALUE * 4
+	contains = list(
+		/obj/item/ammo_box/magazine/wt550m9 = 2,
+		/obj/item/ammo_box/magazine/wt550m9/wtap = 2,
+		/obj/item/ammo_box/magazine/wt550m9/wtic = 2,
+	)
+	crate_name = "wt-550 standard ammo crate"
+	crate_type = /obj/structure/closet/crate/secure/gorlex_weapons/jammed

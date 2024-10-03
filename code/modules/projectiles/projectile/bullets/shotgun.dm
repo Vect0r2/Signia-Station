@@ -60,8 +60,8 @@
 /obj/projectile/bullet/shotgun_frag12
 	name ="frag12 slug"
 	icon_state = "pellet"
-	damage = 15
-	paralyze = 10
+	damage = 25
+	paralyze = 50
 
 /obj/projectile/bullet/shotgun_frag12/on_hit(atom/target, blocked = 0, pierce_hit)
 	..()

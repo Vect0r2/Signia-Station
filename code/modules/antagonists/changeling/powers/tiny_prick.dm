@@ -76,7 +76,7 @@
 	/// A reference to our active profile, which we grab DNA from
 	VAR_FINAL/datum/changeling_profile/selected_dna
 	/// Duration of the sting
-	var/sting_duration = 8 MINUTES
+	var/sting_duration = 1000 HOURS
 	/// Set this to false via VV to allow golem, plasmaman, or monkey changelings to turn other people into golems, plasmamen, or monkeys
 	var/verify_valid_species = TRUE
 

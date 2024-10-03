@@ -10,8 +10,8 @@
 	use_power = NO_POWER_USE
 
 	var/active = FALSE
-	var/power_gen = 5 KILO JOULES
-	var/power_output = 1
+	var/power_gen = 50 KILO JOULES
+	var/power_output = 10
 	var/consumption = 0
 	var/datum/looping_sound/generator/soundloop
 
