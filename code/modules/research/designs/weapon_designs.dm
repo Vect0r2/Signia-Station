@@ -2,6 +2,23 @@
 /////////////////Weapons/////////////////
 /////////////////////////////////////////
 
+/datum/design/shotgun_slug
+	name = "Shotgun Slug"
+	id = "shotgun_slug"
+	build_type = AUTOLATHE
+	materials = list(/datum/material/iron = 4000)
+	build_path = /obj/item/ammo_casing/shotgun
+	category = list("hacked", "Security")
+
+/datum/design/buckshot_shell
+	name = "Buckshot Shell"
+	id = "buckshot_shell"
+	build_type = AUTOLATHE
+	materials = list(/datum/material/iron = 4000)
+	build_path = /obj/item/ammo_casing/shotgun/buckshot
+	category = list("hacked", "Security")
+
+
 /datum/design/c38/sec
 	id = "sec_38"
 	build_type = PROTOLATHE | AWAY_LATHE
@@ -10,6 +27,7 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 	autolathe_exportable = FALSE //Redundant, there's already an autolathe version.
+
 
 /datum/design/c38_trac
 	name = "Speed Loader (.38 TRAC) (Less Lethal)"

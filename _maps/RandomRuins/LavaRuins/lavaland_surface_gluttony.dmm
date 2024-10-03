@@ -111,10 +111,10 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ie" = (
-/obj/item/veilrender/vealrender,
 /obj/structure/stone_tile/slab/cracked{
 	dir = 6
 	},
+/obj/item/reagent_containers/syringe/gluttony,
 /turf/open/indestructible/necropolis,
 /area/ruin/powered/gluttony)
 "iw" = (
